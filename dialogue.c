@@ -14,7 +14,7 @@ int main(void) {
     printf("Сколько у тебя маны? ");
     scanf("%f", &mana);
     
-    printf("%s, у тебя HP = %d, Мана = %.2f\n", name, hp, mana)
+    printf("%s, у тебя HP = %d, Мана = %.2f\n", name, hp, mana);
 
     return 0;
 }
