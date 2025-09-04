@@ -1,19 +1,20 @@
 #include <stdio.h>
+
 int main(void) {
-    char name[50];    // строка для имени
-    int hp;           // здоровье
-    float mana;       // мана
+    char name[50];      // имя игрока
+    int hp;             // очки здоровья
+    float mana;         // очки маны
 
-    printf("Введите ваше имя: ");
-    scanf("%49s", name);   // читаем строку (до пробела)
+    printf("Как тебя зовут? ");
+    scanf("%49s", name);   // считываем имя (строку без пробелов)
 
-    printf("Введите HP (целое число): ");
+    printf("Сколько у тебя HP? ");
     scanf("%d", &hp);
 
-    printf("Введите Манy (вещественное число): ");
+    printf("Сколько у тебя маны? ");
     scanf("%f", &mana);
 
-    printf("%s, у тебя HP = %d, Мана = %.2f\n", name, hp, mana);
+    printf("\nПривет, %s!\nТвои характеристики:\n у тебя HP: %d\n Mana: %.2f\n", name, hp, mana);
 
     return 0;
 }
